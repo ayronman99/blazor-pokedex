@@ -1,0 +1,117 @@
+﻿@using Pokedex.Models;
+@using Pokedex.Clients;
+@using Pokedex.Shared.Components;
+
+@page "/pokemon/{Identifier}"
+
+@inject PokeClient PokeClient;
+
+<div class="container">
+  <NavLink class="nav-link" href="/">
+        <span class="oi oi-home" aria-hidden="true"> Home </span> 
+   </NavLink>
+  <div class="sub-menu">
+    @if(pokeIDTest <= 1) {
+      <NavLink class="nav-link" href="#" disabled>
+      </NavLink>
+    } else {
+      <NavLink class="nav-link" href="@($"/pokemon/{getPreviousPokemon}")">
+        <span class="oi oi-chevron-left" aria-hidden="true"> @Capitalizer(previousPokemon?.Name) </span> 
+      </NavLink>
+    }
+
+
+   <NavLink class="nav-link" href="@($"/pokemon/{pokeIDTest}")">
+        <span class="oi oi-chevron-right" aria-hidden="true"> @Capitalizer(nextPokemon?.Name) </span> 
+   </NavLink>
+
+  </div>
+
+
+  @if (isLoading)
+  {
+    <p>Loading...</p>
+  }
+  else
+  {
+    @if (pokemon is null)
+    {
+      <p>No Pokemon was found with this name or id: @Identifier</p>
+    }
+    else
+    {
+      <img src="@pokemon.Sprites.Default" />
+      <p>@pokemon?.Name</p>
+      <p>Pokemon #@pokemon?.Id</p>
+      <PokemonTypes Types=@pokemon.Types></PokemonTypes>
+
+      <table class="stats">
+        <tbody>
+          <tr>
+            <td>Base Experience</td>
+            <td>@pokemon.BaseExperience</td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>@pokemon.Height</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>@pokemon.Weight</td>
+          </tr>
+        </tbody>
+      </table>
+    }
+  }
+  
+</div>
+
+@code {
+  [Parameter]
+  public string Identifier { get; set; }
+
+   
+  private bool isLoading = true;
+
+
+
+  private int pokeIDTest;
+  
+  private int getPreviousPokemon;
+  public Pokemon pokemon;
+  public Pokemon nextPokemon;
+  public Pokemon previousPokemon;
+  protected override async Task OnInitializedAsync()
+  {
+    
+    pokemon = await PokeClient.GetPokemonByNameOrId(Identifier);
+
+    pokeIDTest = pokemon.Id;
+    pokeIDTest++;
+    getPreviousPokemon = pokeIDTest - 2;
+
+    nextPokemon = await PokeClient.GetPokemonByNameOrId(pokeIDTest.ToString());
+    previousPokemon = await PokeClient.GetPokemonByNameOrId(getPreviousPokemon.ToString());
+
+    if(pokemon?.Name != null){
+        isLoading = false;  
+    }
+    
+    }
+public string Capitalizer(string fChar){
+      if (fChar.Length == 0)
+        return null;
+      else if (fChar.Length == 1)
+        char.ToUpper(fChar[0]);
+      else
+        return char.ToUpper(fChar[0]) + fChar.Substring(1);
+
+    return fChar.ToUpper();
+  } 
+
+  protected override async Task OnParametersSetAsync()
+      {   
+          isLoading = true;
+          await OnInitializedAsync();
+      }
+}

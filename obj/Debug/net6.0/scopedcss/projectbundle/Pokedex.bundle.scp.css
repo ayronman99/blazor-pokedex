@@ -1,0 +1,345 @@
+/* /Pages/Index.razor.rz.scp.css */
+
+.pokemon-cards[b-bpurtov1tr] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/* /Pages/PokemonDetails.razor.rz.scp.css */
+table[b-itozalocj1], th[b-itozalocj1], td[b-itozalocj1] {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  
+  .stats[b-itozalocj1] {
+    margin: 15px;
+  }
+  
+  .container[b-itozalocj1] {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p[b-itozalocj1] {
+    text-transform: capitalize;
+  }
+
+  .oi-home[b-itozalocj1]{
+    position: absolute;
+    left: 20px;
+    top: 80px;
+  }
+
+  .sub-menu[b-itozalocj1]{
+    margin-top: .75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  span[b-itozalocj1]{
+    padding: .5rem;
+    text-align: center;
+  }
+/* /Shared/Components/PokemonCard.razor.rz.scp.css */
+.pokemon-card[b-x4nu6gxhjx] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: black;
+    line-height: 2px;
+  }
+  
+  a[b-x4nu6gxhjx], p[b-x4nu6gxhjx] {
+    text-decoration: none;
+  }
+  
+  .pokemon-card img[b-x4nu6gxhjx] {
+    height: 96px;
+    width: 96px;
+  }
+/* /Shared/Components/PokemonTypes.razor.rz.scp.css */
+.pokemon-card[b-lon84e4pi0] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+  
+  .pokemon-card img[b-lon84e4pi0] {
+    height: 96px;
+    width: 96px;
+  }
+  
+  .pokemon-type[b-lon84e4pi0] {
+    display:inline-block;
+    padding: 5px;
+    border: 1px solid #00000033;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    font-size: 12px;
+    margin: 2px;
+  }
+  
+  .pokemon-type-normal[b-lon84e4pi0] {
+    background-color: #aa9;
+  }
+  
+  .pokemon-type-water[b-lon84e4pi0] {
+    background-color: #39f;
+  }
+  
+  .pokemon-type-fire[b-lon84e4pi0] {
+    background-color: #f42;
+  }
+  
+  .pokemon-type-grass[b-lon84e4pi0] {
+    background-color: #7c5;
+  }
+  
+  .pokemon-type-flying[b-lon84e4pi0] {
+    background-color: #00b6b6;
+  }
+  
+  .pokemon-type-flying[b-lon84e4pi0] {
+    background-color: #00b6b6;
+  }
+  
+  .pokemon-type-electric[b-lon84e4pi0] {
+    background-color: #fc3;
+  }
+  
+  .pokemon-type-bug[b-lon84e4pi0] {
+    background-color: #ab2;
+  }
+  
+  .pokemon-type-poison[b-lon84e4pi0] {
+    background-color: #a59;
+  }
+  
+  .pokemon-type-ground[b-lon84e4pi0] {
+    background-color: #db5;
+  }
+  
+  .pokemon-type-fighting[b-lon84e4pi0] {
+    background-color: #b54;
+  }
+  
+  .pokemon-type-ice[b-lon84e4pi0] {
+    background-color: #6cf;
+  }
+  
+  .pokemon-type-psychic[b-lon84e4pi0] {
+    background-color: #f59;
+  }
+  
+  .pokemon-type-rock[b-lon84e4pi0] {
+    background-color: #ba6;
+  }
+  
+  .pokemon-type-ghost[b-lon84e4pi0] {
+    background-color: #66b;
+  }
+  
+  .pokemon-type-dragon[b-lon84e4pi0] {
+    background-color: #76e;
+  }
+  
+  .pokemon-type-dark[b-lon84e4pi0] {
+    background-color: #754;
+  }
+  
+  .pokemon-type-steel[b-lon84e4pi0] {
+    background-color: #aab;
+  }
+  
+  .pokemon-type-fairy[b-lon84e4pi0] {
+    background-color: #e9e;
+  }
+/* /Shared/MainLayout.razor.rz.scp.css */
+
+main[b-xq4s9mn277] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+
+/* .page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row ::deep a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row, article {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+} */
+/* /Shared/NavMenu.razor.rz.scp.css */
+a[b-38gbxz2mky] {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item ::deep a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item ::deep a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        // Never collapse the sidebar for wide screens 
+        display: block;
+    }
+} */

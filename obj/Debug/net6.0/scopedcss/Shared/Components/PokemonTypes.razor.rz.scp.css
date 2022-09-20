@@ -1,0 +1,106 @@
+.pokemon-card[b-lon84e4pi0] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+  }
+  
+  .pokemon-card img[b-lon84e4pi0] {
+    height: 96px;
+    width: 96px;
+  }
+  
+  .pokemon-type[b-lon84e4pi0] {
+    display:inline-block;
+    padding: 5px;
+    border: 1px solid #00000033;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    font-size: 12px;
+    margin: 2px;
+  }
+  
+  .pokemon-type-normal[b-lon84e4pi0] {
+    background-color: #aa9;
+  }
+  
+  .pokemon-type-water[b-lon84e4pi0] {
+    background-color: #39f;
+  }
+  
+  .pokemon-type-fire[b-lon84e4pi0] {
+    background-color: #f42;
+  }
+  
+  .pokemon-type-grass[b-lon84e4pi0] {
+    background-color: #7c5;
+  }
+  
+  .pokemon-type-flying[b-lon84e4pi0] {
+    background-color: #00b6b6;
+  }
+  
+  .pokemon-type-flying[b-lon84e4pi0] {
+    background-color: #00b6b6;
+  }
+  
+  .pokemon-type-electric[b-lon84e4pi0] {
+    background-color: #fc3;
+  }
+  
+  .pokemon-type-bug[b-lon84e4pi0] {
+    background-color: #ab2;
+  }
+  
+  .pokemon-type-poison[b-lon84e4pi0] {
+    background-color: #a59;
+  }
+  
+  .pokemon-type-ground[b-lon84e4pi0] {
+    background-color: #db5;
+  }
+  
+  .pokemon-type-fighting[b-lon84e4pi0] {
+    background-color: #b54;
+  }
+  
+  .pokemon-type-ice[b-lon84e4pi0] {
+    background-color: #6cf;
+  }
+  
+  .pokemon-type-psychic[b-lon84e4pi0] {
+    background-color: #f59;
+  }
+  
+  .pokemon-type-rock[b-lon84e4pi0] {
+    background-color: #ba6;
+  }
+  
+  .pokemon-type-ghost[b-lon84e4pi0] {
+    background-color: #66b;
+  }
+  
+  .pokemon-type-dragon[b-lon84e4pi0] {
+    background-color: #76e;
+  }
+  
+  .pokemon-type-dark[b-lon84e4pi0] {
+    background-color: #754;
+  }
+  
+  .pokemon-type-steel[b-lon84e4pi0] {
+    background-color: #aab;
+  }
+  
+  .pokemon-type-fairy[b-lon84e4pi0] {
+    background-color: #e9e;
+  }
